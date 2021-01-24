@@ -25,7 +25,9 @@ I used the same method as creating a cloud to create the rackets. Then rotated t
 
 ### Bouncing ball with shadow
 
-Created a small ball and a shadow ball to animate. Using keyframes and animation, I mapped out a route for the ball to bounce up and down towards the screen and the shadow path casted from the light source (upper leftish).
+Created a small ball and a shadow ball to animate. Using keyframes and animation, I mapped out a route for the ball to bounce up and down towards the screen and the shadow path casted from the light source (upper leftish). 
+
+Timing of the bounces is a bit floaty but it works! 
 
 ![Bouncing Ball Gif](https://user-images.githubusercontent.com/15721687/105627970-1e33a480-5e8e-11eb-8f5b-564f8b20333b.gif)
 
