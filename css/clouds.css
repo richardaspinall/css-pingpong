@@ -1,0 +1,55 @@
+.cloud {
+  position: absolute;
+  margin-top: 70px;
+  width: 130px;
+  height: 50px;
+  background: #eceff1;
+  -webkit-box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  z-index: -1;
+}
+
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  background: inherit;
+  border-radius: inherit;
+}
+
+.cloud::before {
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  left: 40px;
+}
+
+.cloud::after {
+  width: 30px;
+  height: 30px;
+  top: -50px;
+  left: -40px;
+}
+
+#cloud1 {
+  top: 0px;
+  left: 10%;
+}
+
+#cloud2 {
+  top: 70px;
+  left: 80%;
+}
+
+#cloud3 {
+  top: 25px;
+  left: 50%;
+}
+
+#cloud4 {
+  top: -30px;
+  right: 5%;
+}
+/*# sourceMappingURL=clouds.css.map */

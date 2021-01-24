@@ -1,0 +1,32 @@
+// Global variables
+
+$background-blue: lightsteelblue;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-blue;
+  font-family: monospace;
+  font-weight: 200;
+  color: black;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 4em;
+}
+
+#title {
+  display: inline-block;
+  margin-top: 50px;
+}
+section {
+  display: grid;
+  justify-items: center;
+}
