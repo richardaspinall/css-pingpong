@@ -1,7 +1,7 @@
 # pingpong-css
 > Jan 2021
 
-> Fun little play around project with CSS positioning, shapes and animations.
+Fun little play around project with CSS positioning, shapes and animations.
 
 ## Goals
 * Learn about CSS animations and how to create complex shapes.
