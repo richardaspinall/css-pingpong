@@ -95,6 +95,8 @@
   background: red;
   -webkit-animation: moveBall 3s ease-in-out forwards;
           animation: moveBall 3s ease-in-out forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #ball-shadow {
@@ -102,6 +104,8 @@
   z-index: -1;
   -webkit-animation: moveShadow 3s ease-in-out forwards;
           animation: moveShadow 3s ease-in-out forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes moveBall {

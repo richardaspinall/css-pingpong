@@ -101,11 +101,13 @@
 #ball {
   background: red;
   animation: moveBall 3s ease-in-out forwards;
+  animation-iteration-count: infinite;
 }
 #ball-shadow {
   background: rgba(0, 0, 0, 0.2);
   z-index: -1;
   animation: moveShadow 3s ease-in-out forwards;
+  animation-iteration-count: infinite;
 }
 
 @keyframes moveBall {
