@@ -13,7 +13,7 @@ Fun little play around project with CSS positioning, shapes and animations.
 
 ### Create a cloud!
 
-I started off by researching how to create a complex shape such as a cloud. I looked at ways to do this through SVGs but then came across a very simple way to do this via 3 rectangles with full border radius: a long rectangle as the base, then two more rectangles (squares) relatively positioned to the base rectangle using pseudo selectors. The squares turn to circles and the base has fully rounded ends. 
+I started off by researching how to create a complex shape such as a cloud. I came across a very simple way to do this via 3 rectangles with full border radius: a long rectangle as the base, then two more rectangles (squares) relatively positioned to the base rectangle using pseudo selectors. 
 
 ![Cloud Gif](https://user-images.githubusercontent.com/15721687/105627436-1a525300-5e8b-11eb-8738-ef970cbc99d7.gif)
 
