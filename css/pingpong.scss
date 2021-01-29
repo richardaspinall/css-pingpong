@@ -24,6 +24,7 @@
   width: 10px;
   height: 300px;
   background: white;
+  box-shadow: 5px 3px rgba(0, 0, 0, 0.2);
 }
 
 .line {
@@ -52,12 +53,17 @@
   left: 20%;
   z-index: -1;
   transform: rotate(-45deg);
+
+  animation: moveRacket1 5s ease-in-out forwards;
+  animation-iteration-count: infinite;
 }
 
 #racket2 {
   right: 20%;
   z-index: -1;
   transform: rotate(45deg);
+  animation: moveRacket2 5s ease-in-out forwards;
+  animation-iteration-count: infinite;
 }
 
 .racket-head {
@@ -93,73 +99,107 @@
 // Ball
 .ball {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 100px;
 }
 
 #ball {
   background: red;
-  animation: moveBall 3s ease-in-out forwards;
+  animation: moveBall 5s ease-in-out forwards;
   animation-iteration-count: infinite;
 }
 #ball-shadow {
   background: rgba(0, 0, 0, 0.2);
   z-index: -1;
-  animation: moveShadow 3s ease-in-out forwards;
+  animation: moveShadow 5s ease-in-out forwards;
   animation-iteration-count: infinite;
+}
+
+@keyframes moveRacket1 {
+  0% {
+  }
+
+  50% {
+    top: 30%;
+    transform: rotate(-25deg);
+  }
+
+  100% {
+  }
+}
+
+@keyframes moveRacket2 {
+  0% {
+  }
+
+  50% {
+    top: 70%;
+    transform: rotate(25deg);
+  }
+
+  100% {
+  }
 }
 
 @keyframes moveBall {
   0% {
-    bottom: 50%;
-    right: 23%;
+    bottom: 46%;
+    right: 22%;
+    width: 15px;
+    height: 15px;
   }
 
-  30% {
-    bottom: 20%;
-    right: 20%;
+  25% {
+    width: 35px;
+    height: 30px;
   }
 
   50% {
-    bottom: 50%;
-    right: 23%;
+    bottom: 56%;
+    right: 75%;
+    width: 15px;
+    height: 15px;
   }
 
-  70% {
-    bottom: 20%;
-    right: 20%;
+  75% {
+    width: 35px;
+    height: 30px;
   }
-
   100% {
-    bottom: 50%;
-    right: 23%;
+    bottom: 46%;
+    right: 22%;
   }
 }
 
 @keyframes moveShadow {
   0% {
-    bottom: 50%;
-    right: 23%;
+    bottom: 46%;
+    right: 22%;
+    width: 15px;
+    height: 15px;
   }
 
-  30% {
-    bottom: 37%;
-    right: 17%;
+  25% {
+    bottom: 41%;
+    width: 15px;
+    height: 10px;
   }
 
   50% {
-    bottom: 50%;
-    right: 23%;
+    bottom: 56%;
+    right: 75%;
+    width: 15px;
+    height: 15px;
   }
 
-  70% {
-    bottom: 37%;
-    right: 17%;
+  75% {
+    bottom: 41%;
+    width: 15px;
+    height: 10px;
   }
-
   100% {
-    bottom: 50%;
-    right: 23%;
+    bottom: 46%;
+    right: 22%;
   }
 }
