@@ -53,8 +53,8 @@
   z-index: -1;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  -webkit-animation: moveRacket1 5s ease-in-out forwards;
-          animation: moveRacket1 5s ease-in-out forwards;
+  -webkit-animation: moveRacket1 10s ease-in-out forwards;
+          animation: moveRacket1 10s ease-in-out forwards;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -64,8 +64,8 @@
   z-index: -1;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-animation: moveRacket2 5s ease-in-out forwards;
-          animation: moveRacket2 5s ease-in-out forwards;
+  -webkit-animation: moveRacket2 10s ease-in-out forwards;
+          animation: moveRacket2 10s ease-in-out forwards;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -103,8 +103,8 @@
 
 #ball {
   background: red;
-  -webkit-animation: moveBall 5s ease-in-out forwards;
-          animation: moveBall 5s ease-in-out forwards;
+  -webkit-animation: moveBall 10s ease-in-out forwards;
+          animation: moveBall 10s ease-in-out forwards;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -112,8 +112,8 @@
 #ball-shadow {
   background: rgba(0, 0, 0, 0.2);
   z-index: -1;
-  -webkit-animation: moveShadow 5s ease-in-out forwards;
-          animation: moveShadow 5s ease-in-out forwards;
+  -webkit-animation: moveShadow 10s ease-in-out forwards;
+          animation: moveShadow 10s ease-in-out forwards;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -121,10 +121,17 @@
 @-webkit-keyframes moveRacket1 {
   0% {
   }
-  50% {
-    top: 30%;
-    -webkit-transform: rotate(-25deg);
-            transform: rotate(-25deg);
+  25% {
+    top: 70%;
+    left: 21%;
+  }
+  60% {
+    top: 46%;
+    left: 22%;
+  }
+  75% {
+    top: 25%;
+    left: 35%;
   }
   100% {
   }
@@ -133,10 +140,17 @@
 @keyframes moveRacket1 {
   0% {
   }
-  50% {
-    top: 30%;
-    -webkit-transform: rotate(-25deg);
-            transform: rotate(-25deg);
+  25% {
+    top: 70%;
+    left: 21%;
+  }
+  60% {
+    top: 46%;
+    left: 22%;
+  }
+  75% {
+    top: 25%;
+    left: 35%;
   }
   100% {
   }
@@ -145,10 +159,25 @@
 @-webkit-keyframes moveRacket2 {
   0% {
   }
+  15% {
+    top: 25%;
+    right: 30%;
+  }
+  30% {
+    top: 40%;
+    right: 20%;
+  }
   50% {
-    top: 70%;
-    -webkit-transform: rotate(25deg);
-            transform: rotate(25deg);
+    top: 8%;
+    right: 10%;
+  }
+  60% {
+    top: 16%;
+    right: 17%;
+  }
+  70% {
+    top: 16%;
+    right: 25%;
   }
   100% {
   }
@@ -157,10 +186,25 @@
 @keyframes moveRacket2 {
   0% {
   }
+  15% {
+    top: 25%;
+    right: 30%;
+  }
+  30% {
+    top: 40%;
+    right: 20%;
+  }
   50% {
-    top: 70%;
-    -webkit-transform: rotate(25deg);
-            transform: rotate(25deg);
+    top: 8%;
+    right: 10%;
+  }
+  60% {
+    top: 16%;
+    right: 17%;
+  }
+  70% {
+    top: 16%;
+    right: 25%;
   }
   100% {
   }
@@ -173,17 +217,37 @@
     width: 15px;
     height: 15px;
   }
-  25% {
+  12.5% {
     width: 35px;
     height: 30px;
   }
-  50% {
-    bottom: 56%;
+  25% {
+    bottom: 16%;
     right: 75%;
     width: 15px;
     height: 15px;
   }
+  37.5% {
+    width: 35px;
+    height: 30px;
+  }
+  50% {
+    bottom: 84%;
+    right: 12%;
+    width: 15px;
+    height: 15px;
+  }
+  62.5% {
+    width: 35px;
+    height: 30px;
+  }
   75% {
+    bottom: 66%;
+    right: 62%;
+    width: 15px;
+    height: 15px;
+  }
+  87.5% {
     width: 35px;
     height: 30px;
   }
@@ -200,17 +264,37 @@
     width: 15px;
     height: 15px;
   }
-  25% {
+  12.5% {
     width: 35px;
     height: 30px;
   }
-  50% {
-    bottom: 56%;
+  25% {
+    bottom: 16%;
     right: 75%;
     width: 15px;
     height: 15px;
   }
+  37.5% {
+    width: 35px;
+    height: 30px;
+  }
+  50% {
+    bottom: 84%;
+    right: 12%;
+    width: 15px;
+    height: 15px;
+  }
+  62.5% {
+    width: 35px;
+    height: 30px;
+  }
   75% {
+    bottom: 66%;
+    right: 62%;
+    width: 15px;
+    height: 15px;
+  }
+  87.5% {
     width: 35px;
     height: 30px;
   }
@@ -227,20 +311,38 @@
     width: 15px;
     height: 15px;
   }
-  25% {
-    bottom: 41%;
-    width: 15px;
+  12.5% {
+    width: 10px;
     height: 10px;
   }
-  50% {
-    bottom: 56%;
+  25% {
+    bottom: 16%;
     right: 75%;
     width: 15px;
     height: 15px;
   }
-  75% {
-    bottom: 41%;
+  37.5% {
+    width: 10px;
+    height: 10px;
+  }
+  50% {
+    bottom: 84%;
+    right: 12%;
     width: 15px;
+    height: 15px;
+  }
+  62.5% {
+    width: 10px;
+    height: 10px;
+  }
+  75% {
+    bottom: 66%;
+    right: 62%;
+    width: 15px;
+    height: 15px;
+  }
+  87.5% {
+    width: 10px;
     height: 10px;
   }
   100% {
@@ -256,20 +358,38 @@
     width: 15px;
     height: 15px;
   }
-  25% {
-    bottom: 41%;
-    width: 15px;
+  12.5% {
+    width: 10px;
     height: 10px;
   }
-  50% {
-    bottom: 56%;
+  25% {
+    bottom: 16%;
     right: 75%;
     width: 15px;
     height: 15px;
   }
-  75% {
-    bottom: 41%;
+  37.5% {
+    width: 10px;
+    height: 10px;
+  }
+  50% {
+    bottom: 84%;
+    right: 12%;
     width: 15px;
+    height: 15px;
+  }
+  62.5% {
+    width: 10px;
+    height: 10px;
+  }
+  75% {
+    bottom: 66%;
+    right: 62%;
+    width: 15px;
+    height: 15px;
+  }
+  87.5% {
+    width: 10px;
     height: 10px;
   }
   100% {
