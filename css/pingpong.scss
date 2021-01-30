@@ -1,3 +1,4 @@
+$animation-options: 7s ease-in-out infinite;
 // Court
 #court {
   position: absolute;
@@ -9,6 +10,8 @@
   width: 100%;
   height: 300px;
   background: green;
+  border: solid;
+  border-radius: 30px;
   z-index: -2;
 }
 
@@ -42,28 +45,23 @@
 }
 
 // Rackets
-
 .racket {
   position: absolute;
   top: 40%;
+  z-index: -1;
   // background: red;
 }
 
 #racket1 {
   left: 20%;
-  z-index: -1;
   transform: rotate(-45deg);
-
-  animation: moveRacket1 10s ease-in-out forwards;
-  animation-iteration-count: infinite;
+  animation: moveRacket1 $animation-options;
 }
 
 #racket2 {
   right: 20%;
-  z-index: -1;
   transform: rotate(45deg);
-  animation: moveRacket2 10s ease-in-out forwards;
-  animation-iteration-count: infinite;
+  animation: moveRacket2 $animation-options;
 }
 
 .racket-head {
@@ -74,8 +72,7 @@
 }
 
 .handle {
-  content: '';
-  position: absolute;
+  position: inherit;
   z-index: -2;
   background: black;
   border-radius: 100px;
@@ -87,12 +84,10 @@
 
 // Shadows
 #racket1 > * {
-  //box-shadow: -4px -3px rgba(0, 0, 0, 0.2);
-  // box-shadow: 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 #racket2 > * {
-  // box-shadow: 4px -3px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -106,14 +101,12 @@
 
 #ball {
   background: red;
-  animation: moveBall 10s ease-in-out forwards;
-  animation-iteration-count: infinite;
+  animation: moveBall $animation-options;
 }
 #ball-shadow {
   background: rgba(0, 0, 0, 0.2);
   z-index: -1;
-  animation: moveShadow 10s ease-in-out forwards;
-  animation-iteration-count: infinite;
+  animation: moveShadow $animation-options;
 }
 
 @keyframes moveRacket1 {
@@ -133,6 +126,7 @@
   75% {
     top: 25%;
     left: 35%;
+    transform: rotate(-30deg);
   }
   100% {
   }
@@ -146,32 +140,27 @@
   15% {
     top: 25%;
     right: 30%;
-    // transform: rotate(25deg);
   }
 
   30% {
     top: 40%;
     right: 20%;
-    // transform: rotate(25deg);
   }
 
   // hit
   50% {
     top: 8%;
     right: 10%;
-    // transform: rotate(25deg);
   }
 
   60% {
     top: 16%;
     right: 17%;
-    // transform: rotate(25deg);
   }
 
   70% {
     top: 16%;
     right: 25%;
-    // transform: rotate(25deg);
   }
   // hit
   100% {
@@ -187,8 +176,8 @@
   }
 
   12.5% {
-    width: 35px;
-    height: 30px;
+    width: 65px;
+    height: 60px;
   }
 
   25% {
@@ -199,8 +188,8 @@
   }
 
   37.5% {
-    width: 35px;
-    height: 30px;
+    width: 45px;
+    height: 40px;
   }
   50% {
     bottom: 84%;
@@ -241,8 +230,8 @@
   }
 
   12.5% {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
   }
 
   25% {
@@ -253,8 +242,8 @@
   }
 
   37.5% {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
   }
   50% {
     bottom: 84%;
@@ -264,8 +253,8 @@
   }
 
   62.5% {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
   }
 
   75% {
@@ -276,8 +265,8 @@
   }
 
   87.5% {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
   }
 
   100% {
