@@ -1,7 +1,10 @@
 # Ping Pong CSS
 > Jan 2021
 
-Fun play around project to learn more CSS positioning, shapes and animations. [Resources](https://github.com/richardaspinall/pingpong-css#resources)
+## Description
+Fun play around project to learn more CSS positioning, shapes and animations. 
+
+See learning resources at the bottom of this readme.
 
 ## Goals
 * Learn about CSS animations and how to create complex shapes.
