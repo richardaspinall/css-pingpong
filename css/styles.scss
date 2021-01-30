@@ -8,13 +8,19 @@ $background-blue: lightsteelblue;
   box-sizing: border-box;
 }
 
+#sky {
+  overflow-x: hidden;
+  position: relative;
+  height: 100vh;
+}
 body {
   background-color: $background-blue;
   font-family: monospace;
   font-weight: 200;
   color: black;
-  padding-left: 10%;
-  padding-right: 10%;
+  // padding-left: 10%;
+  // padding-right: 10%;
+  overflow-x: hidden;
 }
 
 h1 {
