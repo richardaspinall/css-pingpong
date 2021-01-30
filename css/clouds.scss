@@ -41,21 +41,21 @@
   top: 70px;
   left: 10%;
   transform: scale(0.5);
-  animation: moveclouds 30s linear infinite;
+  animation: moveclouds 10s linear infinite;
 }
 
 #cloud3 {
   top: 25px;
   left: 50%;
   transform: scale(0.8);
-  animation: moveclouds 55s infinite;
+  animation: moveclouds 15s linear infinite;
 }
 
 #cloud4 {
   top: -30px;
   left: 60%;
   transform: scale(0.9);
-  animation: moveclouds 70s linear infinite;
+  animation: moveclouds 20s linear infinite;
 }
 
 @keyframes moveclouds {
@@ -64,5 +64,16 @@
   }
   100% {
     margin-left: -1000px;
+  }
+}
+
+@media (min-width: 1000px) {
+  @keyframes moveclouds {
+    0% {
+      margin-left: 2000px;
+    }
+    100% {
+      margin-left: -2000px;
+    }
   }
 }

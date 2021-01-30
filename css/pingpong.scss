@@ -13,100 +13,95 @@ $animation-options: 7s ease-in-out infinite;
   border: solid;
   border-radius: 30px;
   z-index: -2;
-}
+  overflow-x: hidden;
 
-@media (min-width: 1000px) {
-  #court {
-    width: 1000px;
+  #net {
+    position: absolute;
+    left: 50%;
+    width: 10px;
+    height: inherit;
+    background: white;
+    box-shadow: 5px 3px rgba(0, 0, 0, 0.2);
   }
-}
 
-#net {
-  position: absolute;
-  left: 50%;
-  width: 10px;
-  height: 300px;
-  background: white;
-  box-shadow: 5px 3px rgba(0, 0, 0, 0.2);
-}
+  .line {
+    position: absolute;
+    width: 1px;
+    height: inherit;
+    background: white;
+    z-index: -3;
+  }
+  #line1 {
+    left: 25%;
+  }
+  #line2 {
+    left: 75%;
+  }
 
-.line {
-  position: absolute;
-  width: 1px;
-  height: 300px;
-  background: white;
-  z-index: -3;
-}
-#line1 {
-  left: 25%;
-}
-#line2 {
-  left: 75%;
-}
+  // Rackets
+  .racket {
+    position: absolute;
+    top: 40%;
+    z-index: -1;
+    // background: red;
+  }
 
-// Rackets
-.racket {
-  position: absolute;
-  top: 40%;
-  z-index: -1;
-  // background: red;
-}
+  #racket1 {
+    left: 20%;
+    transform: rotate(-45deg);
+    animation: moveRacket1 $animation-options;
+  }
 
-#racket1 {
-  left: 20%;
-  transform: rotate(-45deg);
-  animation: moveRacket1 $animation-options;
-}
+  #racket2 {
+    right: 20%;
+    transform: rotate(45deg);
+    animation: moveRacket2 $animation-options;
+  }
 
-#racket2 {
-  right: 20%;
-  transform: rotate(45deg);
-  animation: moveRacket2 $animation-options;
-}
+  .racket-head {
+    width: 50px;
+    height: 60px;
+    background: #eceff1;
+    border-radius: 100px;
+  }
 
-.racket-head {
-  width: 50px;
-  height: 60px;
-  background: #eceff1;
-  border-radius: 100px;
-}
+  .handle {
+    position: inherit;
+    z-index: -2;
+    background: black;
+    border-radius: 100px;
+    width: 10px;
+    height: 50px;
+    top: 40px;
+    left: 20px;
+  }
 
-.handle {
-  position: inherit;
-  z-index: -2;
-  background: black;
-  border-radius: 100px;
-  width: 10px;
-  height: 50px;
-  top: 40px;
-  left: 20px;
-}
+  // Shadows
+  #racket1 > * {
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  }
 
-// Shadows
-#racket1 > * {
-  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-}
+  #racket2 > * {
+    box-shadow: 5px 0px rgba(0, 0, 0, 0.2);
+  }
 
-#racket2 > * {
-  box-shadow: 5px 0px rgba(0, 0, 0, 0.2);
-}
+  // Ball
+  .ball {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+  }
 
-// Ball
-.ball {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 100px;
-}
-
-#ball {
-  background: red;
-  animation: moveBall $animation-options;
-}
-#ball-shadow {
-  background: rgba(0, 0, 0, 0.2);
-  z-index: -1;
-  animation: moveShadow $animation-options;
+  #ball {
+    background: red;
+    animation: moveBall $animation-options;
+  }
+  #ball-shadow {
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    animation: moveShadow $animation-options;
+  }
 }
 
 @keyframes moveRacket1 {
@@ -272,5 +267,17 @@ $animation-options: 7s ease-in-out infinite;
   100% {
     bottom: 46%;
     right: 22%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #court {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 500px) {
+  #court {
+    height: 200px;
   }
 }

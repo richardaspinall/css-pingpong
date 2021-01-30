@@ -11,47 +11,42 @@
   border: solid;
   border-radius: 30px;
   z-index: -2;
+  overflow-x: hidden;
 }
 
-@media (min-width: 1000px) {
-  #court {
-    width: 1000px;
-  }
-}
-
-#net {
+#court #net {
   position: absolute;
   left: 50%;
   width: 10px;
-  height: 300px;
+  height: inherit;
   background: white;
   -webkit-box-shadow: 5px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 3px rgba(0, 0, 0, 0.2);
 }
 
-.line {
+#court .line {
   position: absolute;
   width: 1px;
-  height: 300px;
+  height: inherit;
   background: white;
   z-index: -3;
 }
 
-#line1 {
+#court #line1 {
   left: 25%;
 }
 
-#line2 {
+#court #line2 {
   left: 75%;
 }
 
-.racket {
+#court .racket {
   position: absolute;
   top: 40%;
   z-index: -1;
 }
 
-#racket1 {
+#court #racket1 {
   left: 20%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -59,7 +54,7 @@
           animation: moveRacket1 7s ease-in-out infinite;
 }
 
-#racket2 {
+#court #racket2 {
   right: 20%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -67,14 +62,14 @@
           animation: moveRacket2 7s ease-in-out infinite;
 }
 
-.racket-head {
+#court .racket-head {
   width: 50px;
   height: 60px;
   background: #eceff1;
   border-radius: 100px;
 }
 
-.handle {
+#court .handle {
   position: inherit;
   z-index: -2;
   background: black;
@@ -85,30 +80,30 @@
   left: 20px;
 }
 
-#racket1 > * {
+#court #racket1 > * {
   -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-#racket2 > * {
+#court #racket2 > * {
   -webkit-box-shadow: 5px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-.ball {
+#court .ball {
   position: absolute;
   width: 15px;
   height: 15px;
   border-radius: 100px;
 }
 
-#ball {
+#court #ball {
   background: red;
   -webkit-animation: moveBall 7s ease-in-out infinite;
           animation: moveBall 7s ease-in-out infinite;
 }
 
-#ball-shadow {
+#court #ball-shadow {
   background: rgba(0, 0, 0, 0.2);
   z-index: -1;
   -webkit-animation: moveShadow 7s ease-in-out infinite;
@@ -396,6 +391,18 @@
   100% {
     bottom: 46%;
     right: 22%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #court {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 500px) {
+  #court {
+    height: 200px;
   }
 }
 /*# sourceMappingURL=pingpong.css.map */
