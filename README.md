@@ -31,11 +31,23 @@ Timing of the bounces is a bit floaty but it works!
 
 ![Bouncing Ball Gif](https://user-images.githubusercontent.com/15721687/105627970-1e33a480-5e8e-11eb-8f5b-564f8b20333b.gif)
 
+### Make it interestsing and mesmerizing.
+
+It was very boring with just the bouncing ball, it kind of looked like it was supposed to be a game rather than an animation. Also, it seems pretty obvious to make the ball bounce between the two sides. 
+
+I just added more keyframes and mapped the route in a more interesting way. Made size of the ball bigger and increase of width as it crossed the middle making it look like it's being hit up and towards the viewer in a speedy way.
+
+Rackets just need to move to the balls positioning on alternating quarter intervals. Added a few more keyframes for the rackets just before the ball landed to make it seem like they didn't know exactly where the ball was always going. 
+
+Clouds needed to move. This was fairly simple once I realized I should use the margin on the clouds to determine the start and end of the paths. 
+
+Additionally I needed to wrap everything in another div because mobile doesn't respect `overflow-x` on the body which meant the clouds would cause the annoying horizontal scroll as they were absolutely positioned. ref: https://stackoverflow.com/questions/24193272/overflow-xhidden-on-mobile-device-not-working
 
 ## Resources
-### CSS Clouds:
+### CSS Clouds and movement:
 * https://codepen.io/Mark_Bowley/pen/xEbuI
 * https://lauryndbrown.github.io/2017/06/08/creating-clouds-in-css.html
+* https://codepen.io/antonioescudero/pen/zrxGve (moving clouds)
 
 ### Shapes
 * https://css-tricks.com/the-shapes-of-css/
