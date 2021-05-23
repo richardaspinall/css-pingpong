@@ -1,5 +1,7 @@
 # Ping Pong CSS
-> Jan 2021
+Date started: 24 January 2021
+
+Date ended: 27 January 2021
 
 ## Description
 Fun play around project to learn more CSS positioning, shapes and animations. 
