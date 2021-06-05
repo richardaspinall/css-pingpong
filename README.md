@@ -13,7 +13,6 @@ See learning resources at the bottom of this readme.
 
 ## Results
 * The initial goal was to create a cloud in CSS. I thought I'd carry on and create a few more complex shapes and animations.
-![Full Image](https://user-images.githubusercontent.com/15721687/105628045-9601cf00-5e8e-11eb-9ad9-2c437eb89c7b.png)
 ![finished gif](https://user-images.githubusercontent.com/15721687/106345344-96252300-6303-11eb-9ce2-3ce6b6e5fd74.gif)
 ## Steps
 
