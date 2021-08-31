@@ -1,4 +1,4 @@
-# Ping-Pong
+# ping-pong
 Date started: 24 January 2021
 
 Date ended: 27 January 2021
